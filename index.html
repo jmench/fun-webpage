@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Financial Calculator</title>
-    </head>
-    <body>
-        <h3>
-            This webpage will help you figure out how much to budget for
-            certain things!
-        </h3
-        <form class="" action="index.html" method="post">
-            <h4>
-                First, please enter your monthly income after taxes:
-            </h4>
-            <input type="number" name="income" min="0.01" step="0.01" value="1200.00">
-        </form>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Financial Calculator</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <h3>
+        This webpage will help you figure out how much to budget for
+        certain things!
+    </h3>
+    <form action="index.html" method="post">
+        <h4>
+            First, please enter your monthly income after taxes:
+        </h4>
+        <input type="number" name="income" min="0.01" step="0.01" placeholder="1200.00">
+        <h4>
+            Next, please choose the rule you want to follow:
+        </h4>
+        <select class="select-css" name="rule">
+            <option value="opt1">50 / 30 / 20</option>
+            <option value="opt2">70 / 20 / 10</option>
+        </select>
+        <br>
+        <a
+            href="https://www.thebalance.com/the-50-30-20-rule-of-thumb-453922"
+            target="_blank">(More on 50/30/20)</a>
+        <br>
+        <a
+            href="http://www.youcandealwithit.com/borrowers/managing-money/how-to-save.shtml"
+            target="_blank">(More on 70/20/10)</a>
+        <br>
+    </form>
+</body>
+
 </html>
